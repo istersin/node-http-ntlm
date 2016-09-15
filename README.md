@@ -1,5 +1,7 @@
 # httpntlm
 
+Fork - reverts the changes related to http agentkeepalive, since the new library does not work with MeteorJS
+
 __httpntlm__ is a Node.js library to do HTTP NTLM authentication
 
 It's a port from the Python libary [python-ntml](https://code.google.com/p/python-ntlm/)
