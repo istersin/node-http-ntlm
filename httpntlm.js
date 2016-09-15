@@ -31,9 +31,13 @@ exports.method = function(method, options, finalCallback){
 	var keepaliveAgent;
 
 	if(isHttps){
-		keepaliveAgent = new https.Agent({keepAlive: true});
+		var HttpsAgent = require('agentkeepalive').HttpsAgent;
+		keepaliveAgent = new HttpsAgent();
+		//keepaliveAgent = new https.Agent({keepAlive: true});
 	}else{
-		keepaliveAgent = new http.Agent({keepAlive: true});
+		var Agent = require('agentkeepalive');
+		keepaliveAgent = new Agent();
+		//keepaliveAgent = new http.Agent({keepAlive: true});
 	}
 
 	// build type1 request:
