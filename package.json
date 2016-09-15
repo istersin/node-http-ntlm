@@ -1,6 +1,6 @@
 {
   "name": "httpntlm",
-  "description": "httpntlm is a Node.js library to do HTTP NTLM authentication",
+  "description": "httpntlm is a Node.js library to do HTTP NTLM authentication - Fork that reverts agentkeepalive changes",
   "version": "1.6.1",
   "dependencies": {
     "httpreq": ">=0.4.22",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/SamDecrock/node-http-ntlm.git"
+    "url": "git@github.com:istersin/node-http-ntlm.git"
   },
   "main": "./httpntlm",
   "licenses": [
