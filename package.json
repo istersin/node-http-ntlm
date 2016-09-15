@@ -1,5 +1,5 @@
 {
-  "name": "httpntlm",
+  "name": "httpntlm-agentkeepalive",
   "description": "httpntlm is a Node.js library to do HTTP NTLM authentication - Fork that reverts agentkeepalive changes",
   "version": "1.6.1",
   "dependencies": {
